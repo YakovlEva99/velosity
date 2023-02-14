@@ -5,6 +5,9 @@
   border: none;
   box-sizing: border-box;
 }
+li{
+  padding: 0;
+}
 
 a, a:visited, a:hover {
   color: inherit;
