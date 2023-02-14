@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header class="header">
@@ -17,14 +19,14 @@
             <h1 class="logo">Velocity</h1>
             <nav class="header__nav">
                 <ul>
-                    <li><a href="#!">Home</a></li>
-                    <li><a href="#!">Contact</a></li>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#footer">Contact</a></li>
             </ul>
             </nav>
         </div>
     </header>
 
-    <main class="main">
+    <main id = "main" class="main">
         <section class="welcome">
             <div class="container">
                 <h2 class ="welcome__heading">This is Velocity</h2>
@@ -103,20 +105,37 @@
 
                 <div class="tabs">
                     <div class="tabs__nav">
-                        <button class = "active" type="button">Tab Button 1</button>
-                        <button type="button">Tab Button 2</button>
-                        <button type="button">Tab Button 3</button>
+                        <button id = "but1" onclick="myFun()" class = "active" type="button">Tab Button 1</button>
+                        <button id = "but2" onclick="myFun()"  type="button">Tab Button 2</button>
+                        <button id = "but3" onclick="myFun()" type="button">Tab Button 3</button>
                     </div>
-                    <div class="tabs__item">
+                    <div class="tabs__item" id ="tabs__item">
                         <img src="img/tab1.jpeg" alt="img">
-                        <h4>Some Title Here</h4> 
+                        <h4>Some 11111Title Here</h4> 
                         <div class="tabs__desc">
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                             Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-                             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p></div>
+                             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p></div></div>
+
+                             <div class="tabs__item" id ="tabs__item2">
+                                <img src="img/img2.jpg" alt="img">
+                                <h4>Some22222222222 Title Here</h4> 
+                                <div class="tabs__desc">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                                     Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p></div></div>
 
 
-                    </div>
+                                     <div class="tabs__item" id = "tabs__item3">
+                                        <img src="img/img3.jpg" alt="img">
+                                        <h4>Some 3333333333333333333333333333333Title Here</h4> 
+                                        <div class="tabs__desc">
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                                            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                                             Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p></div></div>
+
+
+                    
 
                 </div>
                 </div>
@@ -128,7 +147,7 @@
 
 
     </main>
-    <footer>    
+    <footer id ="footer">    
         <div class="footer__desc">
             <div class="container footer__container">
                 <div class="footer__about">
@@ -182,6 +201,6 @@
 
 
 </footer>
-    
+<script src="js/script.js"></script>  
 </body>
 </html>

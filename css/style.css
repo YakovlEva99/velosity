@@ -267,6 +267,36 @@ p {
   background-color: #2E80B6;
 }
 
+.hide {
+  display: none;
+}
+
+.ok {
+  display: block;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tabs__item, .tabs__item2, .tabs__item3 {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
 .tabs__item h4 {
   font-size: 31px;
   line-height: 36px;
@@ -281,6 +311,14 @@ p {
   line-height: 25px;
   text-align: center;
   color: #6A859C;
+}
+
+.tabs__item2 {
+  display: none;
+}
+
+.tabs__item3 {
+  display: none;
 }
 
 .footer__container {
