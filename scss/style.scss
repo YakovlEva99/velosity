@@ -226,12 +226,14 @@ p{
 .about .card-wrapper{
     display: flex;
     justify-content: center;
+    // flex-wrap: wrap;//перенос дивов
+    // gap: 20px;//отступы
    
     
     
 
 
-    >*+*{
+    >*{
         margin-left: 20px;
     }
 
@@ -460,4 +462,47 @@ p{
         color:#9E9E9E;
         
     }
+}
+
+@media (max-width: 400px) {
+    .header__nav li+li{
+        margin-left: 15px;
+    
+    }   
+    .welcome__links .link{
+        display: block;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .about .card{
+        margin-left: 0;
+    }
+    .services .card{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .services .card-wrapper{
+        display: block;
+      
+        // margin: 0 auto;
+        // text-align: center;
+    }
+    .tabs__nav > * + * {
+        margin-left: 0;
+        margin-bottom: 0;
+
+    }
+    .tabs__nav button{
+        margin-bottom: 10px;
+    }
+
+}
+@media (max-width: 750px){
+.about .card-wrapper{
+    // display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;//перенос дивов
+    gap: 20px;//отступы
+}
 }

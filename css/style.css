@@ -179,7 +179,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.about .card-wrapper > * + * {
+.about .card-wrapper > * {
   margin-left: 20px;
 }
 
@@ -360,4 +360,40 @@ p {
 }
 .footer__copy p {
   color: #9E9E9E;
+}
+
+@media (max-width: 400px) {
+  .header__nav li + li {
+    margin-left: 15px;
+  }
+  .welcome__links .link {
+    display: block;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .about .card {
+    margin-left: 0;
+  }
+  .services .card {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .services .card-wrapper {
+    display: block;
+  }
+  .tabs__nav > * + * {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .tabs__nav button {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .about .card-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
 }
