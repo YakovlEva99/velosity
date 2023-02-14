@@ -373,12 +373,16 @@ p{
 //FOOTER
 .footer__container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px ;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:20px 40px;
     
     //width: 300px;
     > * {
         width: 30%;
+        min-width: 230px;
         
     }
     ul{
@@ -500,9 +504,19 @@ p{
 }
 @media (max-width: 750px){
 .about .card-wrapper{
-    // display: flex;
+    display: flex;
     // justify-content: center;
     flex-wrap: wrap;//перенос дивов
+    align-items: flex-start;
     gap: 20px;//отступы
 }
 }
+@media (max-width: 829x){
+    .footer__container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;//перенос дивов
+        gap: 20px;//отступы
+       
+    }
+    }
